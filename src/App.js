@@ -1,8 +1,12 @@
 import './App.css';
 import Card from './Element/Card';
 import ImageCard from './Element/ImageCard';
+import InfoCard from './Element/InfoCard';
+import DataGridTable from './Element/DataGridTable';
+import TestDateTimePicker from './Element/TestDateTimePicker';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +17,11 @@ function App() {
           <ImageCard src='./kingston.jpeg' title='Kingston' />
         </div>
         <h3>Image Stat Card example: </h3>
+        <InfoCard src='./kingston.jpeg' title='Kingston' content='This is a marketplace in Kingston' />
+        <h3>Grid table example: </h3>
+        <DataGridTable/>
+        <h3>Date/Time field example:</h3>
+        <TestDateTimePicker/>
       </header>
     </div>
   );
